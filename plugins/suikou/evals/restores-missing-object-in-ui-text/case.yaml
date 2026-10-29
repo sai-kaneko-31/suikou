@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: restores-missing-object-in-ui-text
+expected_outcome: |
+  The rewrite makes clear what the reader is looking at (recipes that can be made from the selected ingredients), that changing the number of servings does not change the search condition, and why the list can be empty. It does not rely on demonstratives or omitted objects the reader cannot recover, does not add features that the prompt never mentioned, and is not much longer than the original. The completed text comes first, followed by a short note on what changed.

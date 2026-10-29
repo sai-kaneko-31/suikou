@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: keeps-reason-when-shortening
+expected_outcome: |
+  The shortened message is clearly shorter than the original, but still lets the manager decide without knowing about the internal test: it states the question (whether to fix keyword variants first), why it is asked (half of the 10 testers could not find what they wanted on page 1, and the cause looks like keyword variants rather than sort order), the cost (one week of delay), and the deadline (Friday). It does not drop the reason and leave only the conclusion.

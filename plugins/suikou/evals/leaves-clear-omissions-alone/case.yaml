@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: leaves-clear-omissions-alone
+expected_outcome: |
+  The reply leaves the clear sentences alone (the omitted subject of the announcement and "この機能", which refers to the previous sentence) and does not add subjects such as "私たちは" or change the tone. It flags the one real gap, "一部のコース" (which courses?), and asks or marks it instead of inventing which courses. It says briefly what it left unchanged and why.

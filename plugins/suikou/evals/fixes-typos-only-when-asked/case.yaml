@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: fixes-typos-only-when-asked
+expected_outcome: |
+  Only the two typos are fixed ("にについて" becomes "について", "供有" becomes "共有"). Every other word, sentence order and the tone stay exactly as in the original. The reply does not suggest rewrites or restructure the message.

@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: keeps-necessary-technical-term
+expected_outcome: |
+  The reply keeps the term 冪等, because other documents use it, and adds a short plain explanation (sending the same request again has the same result as sending it once). It keeps the instruction and its condition (resending is allowed after a network error) and does not overstate what 冪等 guarantees.

@@ -1,0 +1,13 @@
+{
+  "name": "suikou",
+  "owner": {
+    "name": "sai-kaneko-31"
+  },
+  "plugins": [
+    {
+      "name": "suikou",
+      "source": "./plugins/suikou",
+      "description": "日本語の文章を、読み手が一度読んで分かる形に推敲するスキル"
+    }
+  ]
+}

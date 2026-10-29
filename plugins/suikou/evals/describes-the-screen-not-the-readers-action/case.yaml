@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: describes-the-screen-not-the-readers-action
+expected_outcome: |
+  The reply rewrites the first sentence so that it says what the graph shows (this month's spending by category) instead of telling the reader that they are looking at it, keeps the rule that darker bars mean larger amounts, says what has not been decided for the gray bars (the category), keeps the casual voice of the app text, and adds no feature the specification does not give.

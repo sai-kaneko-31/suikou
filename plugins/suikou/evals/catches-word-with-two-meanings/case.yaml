@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: catches-word-with-two-meanings
+expected_outcome: |
+  The reply notices that the one word "ユーザー" is used for two different people (the administrator who invites and the person who is invited), gives each a distinct and consistent term, and says that the notification goes to the inviting administrator. It adds no feature or step that the background does not give.

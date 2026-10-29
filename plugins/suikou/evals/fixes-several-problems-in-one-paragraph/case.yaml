@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: fixes-several-problems-in-one-paragraph
+expected_outcome: |
+  The rewrite replaces the vague references with the script name and the release steps from the background, puts the warning about running the migration script only once (with its reason) before or at the step where the script is run, splits the overloaded sentences, and uses one style throughout. It adds no command, file or step beyond the background, and asks about or marks what it cannot know (what to back up, what to check).

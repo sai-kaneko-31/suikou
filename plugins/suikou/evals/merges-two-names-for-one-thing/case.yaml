@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: merges-two-names-for-one-thing
+expected_outcome: |
+  The reply merges the first two sentences, which say the same thing with two names (置き場 and フォルダ), into one sentence that uses a single name; names the folder 「テンプレート集」 and the shared drive so that readers can find it; tells non-engineers that README.md is a file inside the folder; keeps the polite style; and adds no fact the background does not give.

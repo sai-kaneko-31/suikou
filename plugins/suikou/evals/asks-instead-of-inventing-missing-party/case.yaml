@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: asks-instead-of-inventing-missing-party
+expected_outcome: |
+  The reply identifies what is missing (to whom the writer reported, and what was reported) but does not invent a recipient or content as fact, because the prompt gives no information. It either marks the gaps with placeholders or asks the writer a short question, and can show the shape of a fixed sentence with blanks.
