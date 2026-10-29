@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: keeps-a-long-email-consistent
+expected_outcome: |
+  The reply revises the whole email, not only single sentences. All six numbered items stay in order. The item about changing plans, which packs three questions into one bullet while every other item has one bullet per question, is split to match. The sentence that states what the writer "understands" becomes a plain question. The plan-change example runs from the plan the writer intends to take (フルプラン) to the other plan. The cancellation-fee sentence no longer has a topic-marked noun as the object of the request. The sentence about a price rise says what changes. The approval says what is approved, or is marked. One request form is used throughout. Clear sentences keep their wording and no fact is added.
