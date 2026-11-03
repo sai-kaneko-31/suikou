@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: fixes-topic-that-does-not-fit-the-verb
+expected_outcome: |
+  The reply fixes the one sentence in section ① whose topic does not fit its verb: "この方法は、架空の入金データ (…) で、…通しで動かしました". The topic "この方法" points to the previous sentences correctly, but a method is not what the writer ran; the writer ran it on test data. The rewritten sentence no longer has "この方法は" as the topic of "動かしました". Any of these repairs is fine: replacing the topic with a phrase that says what the sentence is (for example 事前の検証として), turning it into 「この方法について」 or 「この方法では」, or restoring the noun as an object and adding the writer as the subject. The numbers (12 か所, 960 行, 5 種類), the limits of the check (Excel の出席表だけ), the headings and the rest of the proposal stay as they are, and no result or fact is invented. The reply names the mismatch between the topic and the verb as the reason for the change.

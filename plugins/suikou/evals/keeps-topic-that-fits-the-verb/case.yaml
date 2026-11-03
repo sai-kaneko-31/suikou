@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: keeps-topic-that-fits-the-verb
+expected_outcome: |
+  The reply fixes only the one sentence whose topic does not fit its verb ("この方針は、…動かしました": the writer ran the new way in test stores, but the topic is the policy). It leaves the two sentences whose topic fits the verb alone ("この方針は、先週の店長会議で決まりました": 方針が決まる, "手順書は、昨日、メールでお送りしました": 手順書を送る). It does not add subjects, change the polite style, or invent facts about the test.
