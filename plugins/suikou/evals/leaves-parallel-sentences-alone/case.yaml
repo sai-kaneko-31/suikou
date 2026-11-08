@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: leaves-parallel-sentences-alone
+expected_outcome: |
+  The reply leaves the text alone, or says plainly that it has nothing to fix. The notice has two neighbouring sentences, "会議は 10 時に始まります。資料は前日に共有済みです。", that are two independent facts. Neither sentence makes the reader ask "なぜ", so no word that shows a relation is needed. The reply does not join them with ので or ため and does not put そのため, なので or ですから at the start of the second sentence. It adds no fact, number or instruction that is not in the original (for example 「資料は事前にお読みください」). It does not add a subject or change the polite style.
