@@ -1,0 +1,12 @@
+{
+  "base": "main",
+  "review_effort": "medium",
+  "max_rounds": 8,
+  "ci": "none",
+  "gates": [
+    {
+      "name": "parse-json-yaml",
+      "cmd": "git ls-files -z '*.json' '*.yml' '*.yaml' | xargs -0 ruby -rjson -ryaml -e 'j=y=0; ARGV.each{|f| if f.end_with?(\".json\") then JSON.parse(File.read(f)); j+=1 else YAML.load_file(f); y+=1 end}; abort(\"0 files parsed\") if j==0 || y==0; puts \"parsed json=#{j} yaml=#{y}\"'"
+    }
+  ]
+}
