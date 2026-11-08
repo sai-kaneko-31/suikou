@@ -24,6 +24,8 @@ Claude Code で、次の 2 つを実行します。
 
 スキルだけを使うときは、`plugins/suikou/skills/suikou` を `~/.claude/skills/suikou` にコピーします。この場合、更新は手動になります。
 
+Agensi（AI エージェント向けのスキルのマーケットプレイス）にも、無料で掲載しています。掲載ページは [suikou: clearer Japanese for the intended reader](https://www.agensi.io/skills/suikou-clearer-japanese-for-the-intended-reader) です。Agensi の掲載は、このリポジトリとは別に更新します。最新の版はこのリポジトリです。
+
 ## 使い方
 
 文章を渡して、「読みづらいと言われた」「直して」「もう少し短くして」のように頼みます。スキル名を言わなくても、説明文に当てはまる依頼なら使われます。名前を指定するときは `/suikou:suikou` です。
