@@ -29,5 +29,5 @@
   - `prompt.md`: frontmatter は tags・max_turns・timeout_seconds・allowed_tools
   - `graders/NN-名前.md`: frontmatter は type・focus・weight
 - 実行: `cd plugins/suikou && claude plugin eval . --allow-tools Write,Edit,Bash`。モデルを動かすので料金がかかる。スキルなしの基準も同時に回る
-- 既定では、レポート（スコア・プロンプト・採点の判定）を claude.ai へ公開する。`--no-publish` を付けると手元だけに残る（`claude plugin eval --help` による）。実行する前に、持ち主へ公開してよいかを聞く
+- アカウントが対応しているときは、既定でレポート（スコア・プロンプト・採点の判定）を claude.ai へ公開する。`--no-publish` を付けると手元だけに残る（`claude plugin eval --help` による）。実行する前に、持ち主へ公開してよいかを聞く
 - 結果は `plugins/suikou/evals/results/` に出る（`claude plugin eval --help` による）
