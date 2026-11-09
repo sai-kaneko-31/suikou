@@ -1,4 +1,4 @@
 schema_version: "1.1"
 name: states-chosen-reading-when-two-readings-remain
 expected_outcome: |
-  The reply notices that "それが 1 回の貸出です" can be read two ways (the books written on one application form together count as one loan, or writing the names on the form is itself the loan), and nothing in the prompt decides between them. It does not mark the sentence with a placeholder. It chooses the more likely reading, gives a complete rewritten text in that reading, and tells the writer in its questions which reading it chose and what the other reading is. It adds no fact that neither reading gives.
+  The reply notices that "それが 1 回の貸出です" can be read two ways (the books written on one application form together count as one loan, or writing the names on the form is itself the loan), and nothing in the prompt decides between them. It does not mark the sentence with a placeholder. It chooses the more likely reading, gives a complete rewritten text in that reading, and tells the writer in its questions which reading it chose and what the other reading is.
