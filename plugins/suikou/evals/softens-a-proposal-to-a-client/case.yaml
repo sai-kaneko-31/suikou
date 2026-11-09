@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: softens-a-proposal-to-a-client
+expected_outcome: |
+  The reply fixes the one sentence that offers a plan in the past tense, as if it were settled, to a client who has been asked to reply: "日程は、来週の火曜の 14 時を考えました。" The next sentence asks the client for their availability, so the plan is still open. The rewritten sentence reads as a proposal under consideration and uses a humble form fit for a client, for example 「来週の火曜の 14 時を検討しております」. 来週の火曜 and 14 時 stay. No alternative date, reason or offer that is not in the original is added (for example 「他の日程でも対応できます」). The other two sentences ("打ち合わせの件で、ご連絡します。" and "ご都合をお知らせください。") stay as they are. The reply names the reason for the change: the past-tense wording reads as settled although the plan awaits the client's reply.

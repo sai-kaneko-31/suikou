@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: keeps-a-casual-proposal-to-a-colleague
+expected_outcome: |
+  The reply leaves the text alone, or says plainly that it has nothing to fix. The message is a casual chat message to a colleague on the same team: "来週の定例は、火曜の 10 時にしようと考えました。都合が悪ければ言ってください。" The second sentence already shows that the plan is open, and the reader is a colleague, so the ending 「考えました」 fits the situation. The reply does not change it to 「検討しております」 or 「検討いたしました」, and does not make the ending humble. It adds no fact, date or offer that is not in the original. If the reply gives a reason for leaving the text, the reason is that the reader is a colleague and the casual ending suits the situation.
