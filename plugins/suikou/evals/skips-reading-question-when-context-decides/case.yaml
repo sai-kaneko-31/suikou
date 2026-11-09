@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: skips-reading-question-when-context-decides
+expected_outcome: |
+  The prompt's background says that the books written on one application form together make one loan. That decides how "それが 1 回の貸出です" is read. The reply writes the sentence in that reading and does not ask the writer, or ask the writer to confirm, which of two readings "それ" has. It adds no fact the background and the original do not give.
