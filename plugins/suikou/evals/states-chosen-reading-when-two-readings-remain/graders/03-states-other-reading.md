@@ -4,4 +4,4 @@ focus: trace
 weight: 1
 ---
 
-Outside the rewritten text, in its questions or notes to the writer, the reply also states the other reading, the one it did not choose, so that the writer can tell whether the chosen reading matches the intent.
+The same question or confirmation for the writer also states the other reading, the one the reply did not choose, so that the writer can tell whether the chosen reading matches the intent. Naming the other reading only in the list of what the reply changed does not count.

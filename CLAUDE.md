@@ -38,4 +38,8 @@
 - 実行: `cd plugins/suikou && claude plugin eval . --allow-tools Write,Edit,Bash`。モデルを動かすので料金がかかる。スキルなしの基準も同時に回る
 - 既定は 1 ケース 3 回。1 ケースだけ回すときは `--case <ケース名>`、回数は `--runs <n>` で絞る（`claude plugin eval --help` による）
 - アカウントが対応しているときは、既定でレポート（スコア・プロンプト・採点の判定）を claude.ai へ公開する。`--no-publish` を付けると手元だけに残る（`claude plugin eval --help` による）。実行する前に、持ち主へ公開してよいかを聞く
-- 結果は `plugins/suikou/evals/results/` に出る（`claude plugin eval --help` による）
+- 結果は `plugins/suikou/evals/results/` に出る（`claude plugin eval --help` による）。git には入らない（`.gitignore` の `**/evals/results/`）。worktree を消すと、結果も一緒に消える
+- ケースを足す・変えるときは、PR を出す前に、そのケースだけ `--case <ケース名> --runs 2 --no-publish` で回す。2 ケースを 1 回ずつ回した観測では、1 ケースが 2 分前後、$0.3 前後だった
+- 規則の効果を確かめるケースは、書く前にスキルなしの出力を見る。スキルなしでも通る入力は、規則の効果を区別できない。結果の差（Δ）が 0 以下のケースは、入力を作り直す。全アームで通っても、差が 0 なら区別できていない
+- SKILL.md や patterns.md を変えたときは、関係しそうなケースを回し、スコア・差・回数を PR 説明文に書く
+- 採点の判定の理由は、結果に残らない（票だけが残る）。grader が落ちた原因は、`--keep-temp` を付けて回し直し、出力と grader の文を 1 文ずつ突き合わせて確かめる（`--keep-temp` は、実行の出力にある案内による）
