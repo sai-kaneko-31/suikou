@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: moves-cushion-to-the-front-and-breaks-lines-by-role
+expected_outcome: |
+  The reply shows the revised question part of the email. The first sentence, which asks whether a missed trial lesson can be moved to another day, begins with 「差し支えなければ」 instead of ending with it. The request is on one line, and the two supplement sentences (「ほかの日の空き状況が分かれば十分です。」「難しければ、お答えいただかなくても大丈夫です。」) follow together on the next line. The receipt request starts on its own line, apart from the supplement. In the receipt request, 「できれば」 stays directly before 「メールで」, because it applies only to the delivery method. No fact, condition or sentence is added.
