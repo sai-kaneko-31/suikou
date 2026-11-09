@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: does-not-add-steps-between-sentences
+expected_outcome: |
+  The original has two sentences: the reader writes book names on an application form (and what is written on the form counts as one loan), and the librarian searches the shelf, records the loan and hands the books over. The original does not say how the form reaches the librarian. The reply rewrites the text without adding a step (handing in, submitting, receiving the form), a place (a counter, a window) or a condition for the librarian's work that the original does not state. If it thinks a link between the two actions is needed, it says so in a question instead of writing the link into the text. It keeps the librarian's three actions and the rule about one form.
