@@ -14,7 +14,7 @@
 
 - 型の見分け方は SKILL.md と patterns.md に同じ項目がある。「次の N 点」の数と項目は両方で揃える（構造は 9 点）
 - 観点を足したら、SKILL.md の「出す前の確認」と、patterns.md の例も足す。直してはいけない場合は、patterns.md の「直さずに残す例」に足す
-- patterns.md の例は「文脈 / 前 / 後」の 3 行と、その下の箇条書きの解説で書く
+- patterns.md の例は「前」と「後」の 2 行で書く。「文脈」の行は、必要な例にだけ付ける。「直さずに残す例」の節だけは「原文」と「判断」で書く
 - 担当範囲の説明は、SKILL.md（description と「前提と担当範囲」）、README の「何をするか」、plugin.json と marketplace.json の description にある。範囲を変えたら全部揃える
 
 ## リリース
@@ -29,4 +29,5 @@
   - `prompt.md`: frontmatter は tags・max_turns・timeout_seconds・allowed_tools
   - `graders/NN-名前.md`: frontmatter は type・focus・weight
 - 実行: `cd plugins/suikou && claude plugin eval . --allow-tools Write,Edit,Bash`。モデルを動かすので料金がかかる。スキルなしの基準も同時に回る
+- 既定では、レポート（スコア・プロンプト・採点の判定）を claude.ai へ公開する。`--no-publish` を付けると手元だけに残る（`claude plugin eval --help` による）。実行する前に、持ち主へ公開してよいかを聞く
 - 結果は `plugins/suikou/evals/results/` に出る（`claude plugin eval --help` による）
