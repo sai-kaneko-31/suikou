@@ -1,5 +1,6 @@
 {
   "name": "suikou",
+  "description": "日本語の文章を、読み手が一度読んで分かる形に推敲するスキル",
   "owner": {
     "name": "sai-kaneko-31"
   },
