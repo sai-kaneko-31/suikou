@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: adds-noun-before-number-range
+expected_outcome: |
+  The reply fixes 「ご指定の応募方法の 1 から 5 の順に書きます」 in the opening of a full application message: the numbers 1 から 5 are the five numbered items listed under the heading 【応募方法】 of the recruitment text, but the sentence has no noun that says what the numbers are, so they read as numbers belonging to the application method itself. The proposed text puts a noun such as 項目 next to the numbers (for example 「項目 1 から 5」 or 「1 から 5 の項目」). It leaves 「選考の手順 1 から 3」 alone, because the noun 手順 already stands right before the numbers. It keeps the polite style and adds no new facts.
