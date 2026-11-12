@@ -16,12 +16,12 @@
 - patterns.md の節を足したら、目次も直す。型を足したら、「型 10 種」の数（SKILL.md の手順 2 と、この CLAUDE.md の構成）も直す。「読み手の疑問に答えない文」は節だが型ではないので、10 種に数えない
 - 観点を足したら、SKILL.md の「出す前の確認」と、patterns.md の例も足す。直してはいけない場合は、patterns.md の「直さずに残す例」に足す
 - patterns.md の例は「前」と「後」の 2 行で書く。「文脈」の行は、必要な例にだけ付ける。「直さずに残す例」の節だけは「原文」と「判断」で書く
-- 担当範囲の説明は、SKILL.md（description と「前提と担当範囲」）、README の「何をするか」、plugin.json と marketplace.json の description にある。marketplace.json の description は、トップレベルと plugins の項目の 2 か所。範囲を変えたら全部揃える
+- 担当範囲の説明は、SKILL.md（description と「前提と担当範囲」）、README の「何をするか」、plugin.json の description にある。範囲を変えたら全部揃える。marketplace.json の description は、トップレベルと plugins の項目の 2 か所にあるが、担当範囲を述べない概要なので、範囲を変えても揃えない
 
 ## リリース
 
 - スキルの中身を変えて公開するときは、plugin.json の version を上げる。上げないと、マーケットプレイスから入れた利用者は更新を受け取らない。根拠は https://code.claude.com/docs/en/plugins/host-marketplace
-- version を上げるときは、plugin.json だけを変える単独のコミット「plugin.json の version を <版> に上げる」にする。0.2.0・0.4.0・0.5.0 がこの形で、0.5.0 は PR 29（ブランチ `chore/bump-version-0.5.0`）。0.3.0 は、型を足すコミットに同梱した
+- version を上げるときは、plugin.json だけを変える単独のコミット「plugin.json の version を <版> に上げる」にする。ほかの変更のコミットには同梱しない。0.2.0・0.4.0・0.5.0 がこの形で、0.5.0 は PR 29（ブランチ `chore/bump-version-0.5.0`）。0.3.0 は、型を足すコミットに同梱したが、これは例外で、倣わない
 - Agensi の掲載ページは、このリポジトリとは別に更新する。最新の版はこのリポジトリ
   - zip は origin/main から作る: `git archive --format=zip --prefix=suikou/ -o suikou-skill-<コミット>.zip origin/main:plugins/suikou/skills/suikou`
   - 作る前に `git fetch origin` を打つ。`<コミット>` は、`git rev-parse --short origin/main` の値
