@@ -12,7 +12,8 @@
 
 ## SKILL.md と patterns.md を変えるとき
 
-- 型の見分け方は SKILL.md と patterns.md に同じ項目がある。「次の N 点」の数と項目は両方で揃える（構造は 9 点）
+- 型の見分け方は SKILL.md と patterns.md に同じ項目がある。「次の N 点」の数と項目は両方で揃える（構造は 9 点、用語は 4 つ、事実とのずれは 2 点）
+- patterns.md の節を足したら、目次も直す。型を足したら、「型 10 種」の数（SKILL.md の手順 2 と、この CLAUDE.md の構成）も直す。「読み手の疑問に答えない文」は節だが型ではないので、10 種に数えない
 - 観点を足したら、SKILL.md の「出す前の確認」と、patterns.md の例も足す。直してはいけない場合は、patterns.md の「直さずに残す例」に足す
 - patterns.md の例は「前」と「後」の 2 行で書く。「文脈」の行は、必要な例にだけ付ける。「直さずに残す例」の節だけは「原文」と「判断」で書く
 - 担当範囲の説明は、SKILL.md（description と「前提と担当範囲」）、README の「何をするか」、plugin.json と marketplace.json の description にある。範囲を変えたら全部揃える
@@ -20,13 +21,14 @@
 ## リリース
 
 - スキルの中身を変えて公開するときは、plugin.json の version を上げる。上げないと、マーケットプレイスから入れた利用者は更新を受け取らない。根拠は https://code.claude.com/docs/en/plugins/host-marketplace
+- version を上げるときは、plugin.json だけを変える単独のコミット「plugin.json の version を <版> に上げる」にする。0.2.0・0.4.0・0.5.0 がこの形で、0.5.0 は PR 29（ブランチ `chore/bump-version-0.5.0`）。0.3.0 は、型を足すコミットに同梱した
 - Agensi の掲載ページは、このリポジトリとは別に更新する。最新の版はこのリポジトリ
   - zip は origin/main から作る: `git archive --format=zip --prefix=suikou/ -o suikou-skill-<コミット>.zip origin/main:plugins/suikou/skills/suikou`
   - 作る前に `git fetch origin` を打つ。`<コミット>` は、`git rev-parse --short origin/main` の値
   - 画面の道順: Dashboard の Creator Studio へ移る。suikou の行にある鉛筆（編集）を押し、「Replace Skill ZIP」へ zip を上げる。Changelog を書いたら、Resubmit を押す。確認画面が出たら、Submit for review を押す。鉛筆の隣は削除のゴミ箱
   - 審査は通常 24〜48 時間。通るまで現行版は公開のまま。Agensi の版（1.1 など）は、plugin.json の version とは別に採番される
   - zip を上げると、項目が frontmatter から自動入力される。送る前に、名前・要約・説明・権限が掲載のままかを見る
-- マニフェストの検証は、リポジトリ直下で `claude plugin validate .`
+- マニフェストの検証は、リポジトリ直下で `claude plugin validate .`。marketplace.json のトップレベルに description が無いという警告が 1 件出るが、検証は通る（v2.1.322 で確認）
 - PR は merge commit でマージする。head ブランチは、マージのときに自動的に消える
 
 ## 評価ケース
